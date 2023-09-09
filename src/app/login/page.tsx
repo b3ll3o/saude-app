@@ -1,5 +1,5 @@
-import PadraoInput from "@/components/btn/inputs/padrao.input";
 import SubmitBtn from "@/components/btn/submit.btn";
+import PadraoInput from "@/components/inputs/padrao.input";
 
 export default function Login() {
   return (
