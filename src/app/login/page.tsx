@@ -1,5 +1,6 @@
 import SubmitBtn from "@/components/btn/submit.btn";
 import PadraoInput from "@/components/inputs/padrao.input";
+import SenhaInput from "@/components/inputs/senha.input";
 
 export default function Login() {
   return (
@@ -19,9 +20,7 @@ export default function Login() {
                 <a href="#" className="font-semibold text-emerald-600 hover:text-emerald-500">Esqueceu a senha?</a>
               </div>
             </div>
-            <div className="mt-2">
-              <input id="password" name="password" type="password" autoComplete="current-password" required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6"></input>
-            </div>
+            <SenhaInput id="1" nome="senha" texto="texto" />
           </div>
 
           <SubmitBtn texto="Entrar" />
