@@ -1,7 +1,9 @@
-export default function TextoAcao({ texto }: { texto: string}) {
+export class TextoAcaoProps {
+  constructor(public texto: string) { }
+}
+
+export default function TextoAcao({ texto }: TextoAcaoProps) {
   return (
-    <div className="text-sm">
-      <a href="#" className="font-semibold text-emerald-600 hover:text-emerald-500">{texto}</a>
-    </div>
+    <a href="#" className="font-semibold text-emerald-600 hover:text-emerald-500 text-sm">{texto}</a>
   )
 }
